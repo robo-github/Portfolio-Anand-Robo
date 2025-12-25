@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+* {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+body {
+  background-color: #060010;
+  min-height: 100vh;
+}
+
+@theme {
+  --color-primary: #5044e5;
+  --color-second: #271e37;
+  --color-third: #060010;
+}
