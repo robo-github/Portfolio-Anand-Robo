@@ -17,22 +17,22 @@ const Navbar = () => {
           {/* Left */}
           <div className="flex items-center gap-2">
             <img src={assets.my_logo} alt="Logo" className="h-8 w-auto" />
-            <span className="text-white font-extrabold ">Anand</span>
+            <span className="text-white-white font-extrabold ">Anand</span>
           </div>
 
           {/* Right */}
           <div
-            className={`text-white sm:text-sm ${
+            className={`text-white-white sm:text-sm ${
               !sidebarOpen
                 ? "max-sm:w-0 overflow-hidden"
                 : "max-sm:w-60 max-sm:pl-10"
-            } max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-second/30 max-sm:backdrop-blur-md max-sm:border-white/10 max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}
+            } max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-second/30 max-sm:backdrop-blur-md max-sm:border-white/10 max-sm:text-white-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}
           >
             <img
               onClick={() => setSidebarOpen(false)}
               src={assets.close_icon}
               alt="Close"
-              className="w-8 absolute right-4 top-4 sm:hidden rounded-full bg-white p-1"
+              className="w-8 absolute right-4 top-4 sm:hidden rounded-full bg-white-white p-1"
             />
             <a
               onClick={() => setSidebarOpen(false)}
@@ -79,7 +79,7 @@ const Navbar = () => {
               alt=""
             />
 
-            <a className="text-sm  max-sm:hidden bg-white rounded-full px-6 py-2 flex gap-2 text-second cursor-pointer transition-all hover:scale-103">
+            <a className="text-sm  max-sm:hidden bg-white-white rounded-full px-6 py-2 flex gap-2 text-second cursor-pointer transition-all hover:scale-103">
               Resume{" "}
               <img
                 width={14}

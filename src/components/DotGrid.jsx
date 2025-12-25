@@ -263,7 +263,10 @@ const DotGrid = ({
   ]);
 
   return (
-    <section className={`absolute inset-0 ${className}`} style={style}>
+    <section
+      className={`flex items-center justify-center h-full w-full relative ${className}`}
+      style={style}
+    >
       <div ref={wrapperRef} className="w-full h-full relative">
         <canvas
           ref={canvasRef}

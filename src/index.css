@@ -4,7 +4,6 @@
 
 * {
   font-family: "Outfit", sans-serif;
-  font-weight: 500;
 }
 body {
   background-color: #060010;
@@ -15,4 +14,17 @@ body {
   --color-primary: #5044e5;
   --color-second: #271e37;
   --color-third: #060010;
+  --color-white-white: #eeeeee;
+}
+
+.gradient-text {
+  background: linear-gradient(to bottom, #eeeeee, #5044e5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-text-white {
+  background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

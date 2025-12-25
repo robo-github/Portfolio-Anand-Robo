@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import DotGrid from "./components/DotGrid";
+import Skills from "./sections/Skills";
 
 const App = () => {
   return (
@@ -31,7 +32,8 @@ const App = () => {
       {/* Page content sits above the background and is top-aligned */}
       <div style={{ position: "relative", zIndex: 1, minHeight: "100vh" }}>
         <Navbar />
-        {/* <Hero /> */}
+        <Hero />
+        {/* <Skills /> */}
         {/* other page sections go here */}
       </div>
     </>
