@@ -17,7 +17,6 @@ const Navbar = () => {
           {/* Left */}
           <div className="flex items-center gap-2">
             <img src={assets.my_logo} alt="Logo" className="h-8 w-auto" />
-            <span className="text-white-white font-extrabold ">Anand</span>
           </div>
 
           {/* Right */}
