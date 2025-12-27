@@ -71,7 +71,11 @@ const AboutMe = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            transition={{
+              duration: 0.2,
+              delay: 0.1,
+              ease: "easeInOut",
+            }}
             onClick={handleSpeak}
             className="cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out rounded-full p-2 hover:shadow-lg hover:shadow-primary"
             title="Click to hear me!"

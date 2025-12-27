@@ -56,6 +56,7 @@ const Navbar = () => {
           {/* Left */}
           <div className="flex items-center gap-2">
             <motion.img
+              id="home"
               src={assets.my_logo}
               alt="Logo"
               className="h-8 w-auto cursor-pointer"

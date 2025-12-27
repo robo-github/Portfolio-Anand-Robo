@@ -26,6 +26,7 @@ import git_hub_icon from "./github-mark-white.svg";
 import netlify_icon from "./netlify-icon.svg";
 import docker_icon from "./docker-original.svg";
 import c_icon from "./c-icon.svg";
+import vs_code_icon from "./vscode.svg";
 
 const assets = {
   // assets
@@ -62,6 +63,7 @@ const assets = {
   azure_icon,
   netlify_icon,
   docker_icon,
+  vs_code_icon,
 };
 
 export default assets;
