@@ -1,8 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import assets from "../assets/assets";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const audioRef = useRef(null);
+
+  const startShockSound = () => {
+    try {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) return;
+
+      const ctx = new AudioContext();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+
+      osc.type = "sawtooth"; // Electric buzz sound
+      osc.frequency.setValueAtTime(150, ctx.currentTime); // Continuous buzz
+
+      gain.gain.setValueAtTime(0.05, ctx.currentTime); // Low volume
+
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start();
+      audioRef.current = { ctx, osc };
+    } catch (e) {
+      console.error("Audio play failed", e);
+    }
+  };
+
+  const stopShockSound = () => {
+    if (audioRef.current) {
+      const { ctx, osc } = audioRef.current;
+      try {
+        osc.stop();
+        ctx.close();
+      } catch (e) {
+        console.error("Audio stop failed", e);
+      }
+      audioRef.current = null;
+    }
+  };
 
   return (
     <header className="fixed top-6 inset-x-0 z-50">
@@ -16,7 +55,17 @@ const Navbar = () => {
         >
           {/* Left */}
           <div className="flex items-center gap-2">
-            <img src={assets.my_logo} alt="Logo" className="h-8 w-auto" />
+            <motion.img
+              src={assets.my_logo}
+              alt="Logo"
+              className="h-8 w-auto cursor-pointer"
+              whileHover={{
+                x: [0, -3, 3, -3, 3, 0], // Shake animation
+                transition: { duration: 0.2, repeat: Infinity },
+              }}
+              onHoverStart={startShockSound}
+              onHoverEnd={stopShockSound}
+            />
           </div>
 
           {/* Right */}
