@@ -35,6 +35,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <AboutMe />
+        <Skills />
         {/* <Skills /> */}
         {/* other page sections go here */}
       </div>

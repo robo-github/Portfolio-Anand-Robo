@@ -1,0 +1,27 @@
+import {
+  html_icon,
+  css_icon,
+  js_icon,
+  react_icon,
+  bootstrap_icon,
+  tailwind_icon,
+  flutter_icon,
+  nextjs_icon,
+  nodejs_icon,
+  express_icon,
+  python_icon,
+  c_icon,
+  django_icon,
+  mongodb_icon,
+  mysql_icon,
+  sqlite_icon,
+  postgresql_icon,
+  git_icon,
+  git_hub_icon,
+  aws_icon,
+  azure_icon,
+  netlify_icon,
+  docker_icon,
+} from "./assets";
+
+export const skills = [];
