@@ -5,6 +5,11 @@ import assets from "../assets/assets";
 import TargetCursor from "../components/TargetCursor";
 
 const ConnectMe = () => {
+  const handleSpeak = () => {
+    const utterance = new SpeechSynthesisUtterance("Hello");
+    window.speechSynthesis.speak(utterance);
+  };
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -103,6 +108,7 @@ const ConnectMe = () => {
           <button
             className="cursor-target flex gap-2 self-start px-6 py-2 rounded-full bg-white-white text-second font-medium hover:bg-primary/80 transition-all hover:scale-105 shadow-lg shadow-primary/20"
             type="submit"
+            onClick={handleSpeak}
           >
             Say Hello <img src={assets.hello} width={18} alt="" />
           </button>
