@@ -11,7 +11,7 @@ const AboutMe = () => {
   return (
     <div
       id="about-me"
-      className="mt-10 mx-auto max-w-5xl px-4 mb-30 scroll-mt-32"
+      className="mt-10 mx-auto max-w-5xl px-4 mb-28 scroll-mt-32"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -26,7 +26,7 @@ const AboutMe = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="sub-text-gradient font-extrabold text-2xl sm:text-3xl mx-20"
+            className="sub-text-gradient font-extrabold text-2xl sm:text-3xl text-center"
           >
             How I Work
           </motion.h3>
@@ -68,19 +68,19 @@ const AboutMe = () => {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.2,
-              delay: 0.1,
-              ease: "easeInOut",
+              duration: 0.6,
+              delay: 0.4,
+              ease: "easeOut",
             }}
             onClick={handleSpeak}
             className="cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out rounded-full p-2 hover:shadow-lg hover:shadow-primary"
             title="Click to hear me!"
           >
-            <img src={assets.man} className="  w-40 sm:w-100 " alt="Anand TP" />
+            <img src={assets.man} className="w-40 sm:w-100" alt="Anand TP" />
           </motion.div>
         </div>
       </motion.div>

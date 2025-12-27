@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="flex flex-col items-center gap-6 py-50 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden"
+      className="flex flex-col items-center gap-6 py-48 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden"
     >
       <span className="gradient-text">
         <BlurText

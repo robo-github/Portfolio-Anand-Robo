@@ -13,7 +13,7 @@ const Skills = () => {
           transition={{ duration: 0.5 }}
           className="sub-text-gradient font-extrabold text-2xl sm:text-3xl"
         >
-          Technical Skills
+          Tech Arsenal
         </motion.h3>
         <motion.div
           initial={{ scaleX: 0 }}

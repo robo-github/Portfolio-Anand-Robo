@@ -4,6 +4,9 @@ import Hero from "./sections/Hero";
 import DotGrid from "./components/DotGrid";
 import Skills from "./sections/Skills";
 import AboutMe from "./sections/AboutMe";
+import Projects from "./sections/Projects";
+import ConnectMe from "./sections/ConnectMe";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -32,10 +35,38 @@ const App = () => {
 
       {/* Page content sits above the background and is top-aligned */}
       <div style={{ position: "relative", zIndex: 1, minHeight: "100vh" }}>
+        <Toaster
+          position="top-center"
+          gutter={12}
+          containerStyle={{ margin: "8px" }}
+          toastOptions={{
+            success: {
+              duration: 3000,
+              style: {
+                background: "rgba(255, 255, 255, 0.1)",
+                color: "#fff",
+                border: "1px solid rgba(82, 39, 255, 0.2)",
+                backdropFilter: "blur(10px)",
+              },
+            },
+            error: {
+              duration: 5000,
+              style: {
+                background: "rgba(255, 75, 75, 0.1)",
+                color: "#fff",
+                border: "1px solid rgba(255, 75, 75, 0.2)",
+                backdropFilter: "blur(10px)",
+              },
+            },
+            className: "font-medium",
+          }}
+        />
         <Navbar />
         <Hero />
         <AboutMe />
         <Skills />
+        <Projects />
+        <ConnectMe />
         {/* <Skills /> */}
         {/* other page sections go here */}
       </div>

@@ -28,8 +28,18 @@ import docker_icon from "./docker-original.svg";
 import c_icon from "./c-icon.svg";
 import vs_code_icon from "./vscode.svg";
 
+import agency_ai from "./project_images/agency_ai.png";
+import ai from "./project_images/ai.png";
+import gemini_clone from "./project_images/gemini_clone.png";
+import nike from "./project_images/nike.png";
+import todo_mern from "./project_images/todo_mern.png";
+import tab from "./tab.svg";
+import hello from "./hello.svg";
+
 const assets = {
   // assets
+  hello,
+  tab,
   man,
   close_icon,
   my_logo,
@@ -67,3 +77,11 @@ const assets = {
 };
 
 export default assets;
+
+export const proj_img = {
+  agency_ai,
+  ai,
+  gemini_clone,
+  nike,
+  todo_mern,
+};
