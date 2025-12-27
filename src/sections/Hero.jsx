@@ -36,15 +36,15 @@ const Hero = () => {
       {showTextType && (
         <TextType
           text={[
-            "Anand TP  ·  Building the web, better.",
-            "Currently building with the MERN stack.",
-            "Focused on real-world UI and debugging.",
+            "Anand TP  ·  Full-Stack Developer (MERN)",
+            "Building real-world web applications.",
+            "Integrating AI into modern workflows.",
           ]}
           typingSpeed={80}
           pauseDuration={1500}
           showCursor={true}
           cursorCharacter="|"
-          className="gradient-text-white text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-white"
+          className="gradient-text-white text-2xl mt-7 sm:text-3xl md:text-4xl font-medium mb-8 text-white"
         />
       )}
 
@@ -52,7 +52,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: showTextType ? 1 : 0, y: showTextType ? 0 : 20 }}
         transition={{ duration: 0.8 }}
-        className="text-gray-300 shadow-sm  shadow-primary hover:scale-103  transition-all duration-300 ease-out bg-second/30 text-sm rounded-full px-8 py-2 border border-white/10 backdrop-blur-md hover:text-primary hover:bg-gray-300 hover:shadow-lg  hover:inset-shadow-primary  hover:scale-[1.03] active:scale-[0.98]"
+        className="text-gray-300 shadow-sm  shadow-primary hover:scale-103  transition-all duration-300 ease-out bg-second/30 text-sm rounded-full mt-7 px-8 py-2 border border-white/10 backdrop-blur-md hover:text-primary hover:bg-gray-300 hover:shadow-lg  hover:inset-shadow-primary  hover:scale-[1.03] active:scale-[0.98]"
         href="#contact"
       >
         Get In Touch

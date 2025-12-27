@@ -1,16 +1,32 @@
 import React from "react";
 
 const AboutMe = () => {
-  //   I’m Anand TP, a BCA student and fellow at NxtWave Academy, currently focused on building full-stack applications using the MERN stack.
-
-  // I started my journey with Python, exploring data engineering concepts and Django, before moving into React and MERN to build complete, real-world web applications.
-
-  // I spend most of my time building UI, fixing bugs, and understanding backend logic. I care deeply about clean UI, solid logic, performance, maintainable code, and good user experience.
-
-  // My goal is to build full-stack projects without relying on tutorials, creating real-world web pages with full functionality, clear structure, and thoughtful design.
   return (
-    <div>
-      <h3></h3>
+    <div id="about-me" className="flex flex-col items-center gap-7 px-4 mb-30">
+      <h3 className="sub-text-gradient font-extrabold text-2xl sm:text-3xl mx-20">
+        How I Work
+      </h3>
+      <div className="  flex flex-col gap-4 text-left max-w-3xl text-white-white font-medium text-[18px] sm:text-[20px] leading-relaxed">
+        <p className="gradient-text-white">
+          I’m Anand TP, a BCA student and fellow at NxtWave Academy, currently
+          building full-stack applications using the MERN stack.
+        </p>
+        <p className="gradient-text-white">
+          I began with Python, exploring data engineering concepts and Django,
+          before moving into React and MERN to build complete, real-world web
+          applications.
+        </p>
+        <p className="gradient-text-white">
+          Most of my time goes into building UI, fixing bugs, and understanding
+          backend logic. I care deeply about clean design, solid logic,
+          performance, maintainable code, and good user experience.
+        </p>
+        <p className="gradient-text-white">
+          My goal is to build full-stack projects without relying on tutorials,
+          creating real-world web pages with clear structure, full
+          functionality, and thoughtful design.
+        </p>
+      </div>
     </div>
   );
 };

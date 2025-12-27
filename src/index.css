@@ -24,7 +24,18 @@ body {
   color: transparent;
 }
 .gradient-text-white {
-  background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.4));
+  background: linear-gradient(to bottom, #eeeeee, rgba(255, 255, 255, 0.4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.sub-text-gradient {
+  background: #eeeeee;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(108, 99, 235, 0.89) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

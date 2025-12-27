@@ -3,6 +3,7 @@ import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import DotGrid from "./components/DotGrid";
 import Skills from "./sections/Skills";
+import AboutMe from "./sections/AboutMe";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
       <div style={{ position: "relative", zIndex: 1, minHeight: "100vh" }}>
         <Navbar />
         <Hero />
+        <AboutMe />
         {/* <Skills /> */}
         {/* other page sections go here */}
       </div>
