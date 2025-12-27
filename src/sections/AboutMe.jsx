@@ -5,7 +5,9 @@ import TargetCursor from "../components/TargetCursor";
 
 const AboutMe = () => {
   const handleSpeak = () => {
-    const utterance = new SpeechSynthesisUtterance("Hi, I am Anand TP");
+    const utterance = new SpeechSynthesisUtterance(
+      "Hi, I am Anand TP , Here’s a snapshot of my work and experience."
+    );
     window.speechSynthesis.speak(utterance);
   };
 
