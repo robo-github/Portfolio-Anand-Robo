@@ -35,9 +35,15 @@ import nike from "./project_images/nike.png";
 import todo_mern from "./project_images/todo_mern.png";
 import tab from "./tab.svg";
 import hello from "./hello.svg";
+import instagram from "./instagram.svg";
+import linkedIn from "./linkedin.svg";
+import github from "./github.svg";
 
 const assets = {
   // assets
+  instagram,
+  linkedIn,
+  github,
   hello,
   tab,
   man,

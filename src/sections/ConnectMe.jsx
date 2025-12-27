@@ -2,6 +2,7 @@ import React from "react";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 import assets from "../assets/assets";
+import TargetCursor from "../components/TargetCursor";
 
 const ConnectMe = () => {
   const onSubmit = async (event) => {
@@ -29,6 +30,11 @@ const ConnectMe = () => {
 
   return (
     <section id="contact" className="max-w-5xl mx-auto px-4 py-20 scroll-mt-20">
+      <TargetCursor
+        spinDuration={2}
+        hideDefaultCursor={true}
+        parallaxOn={true}
+      />
       <div className="flex flex-col items-center gap-2 mb-12">
         <motion.h3
           initial={{ opacity: 0, y: -20 }}
@@ -65,7 +71,7 @@ const ConnectMe = () => {
                 type="text"
                 name="name"
                 placeholder="Enter your name"
-                className="w-full p-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary/50 transition-colors"
+                className="cursor-target w-full p-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary/50 transition-colors"
                 required
               />
             </div>
@@ -78,7 +84,7 @@ const ConnectMe = () => {
                 type="email"
                 name="email"
                 placeholder="Enter your email"
-                className="w-full p-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary/50 transition-colors"
+                className="cursor-target w-full p-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary/50 transition-colors"
                 required
               />
             </div>
@@ -90,12 +96,12 @@ const ConnectMe = () => {
               name="message"
               rows={6}
               placeholder="Enter your message"
-              className="w-full p-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary/50 transition-colors resize-none"
+              className="cursor-target w-full p-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary/50 transition-colors resize-none"
               required
             />
           </div>
           <button
-            className="flex gap-2 self-start px-6 py-2 rounded-full bg-white-white text-second font-medium hover:bg-primary/80 transition-all hover:scale-105 shadow-lg shadow-primary/20"
+            className="cursor-target flex gap-2 self-start px-6 py-2 rounded-full bg-white-white text-second font-medium hover:bg-primary/80 transition-all hover:scale-105 shadow-lg shadow-primary/20"
             type="submit"
           >
             Say Hello <img src={assets.hello} width={18} alt="" />

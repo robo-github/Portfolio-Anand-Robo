@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import DotGrid from "./components/DotGrid";
@@ -7,6 +7,7 @@ import AboutMe from "./sections/AboutMe";
 import Projects from "./sections/Projects";
 import ConnectMe from "./sections/ConnectMe";
 import { Toaster } from "react-hot-toast";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -67,6 +68,7 @@ const App = () => {
         <Skills />
         <Projects />
         <ConnectMe />
+        <Footer />
         {/* <Skills /> */}
         {/* other page sections go here */}
       </div>

@@ -59,7 +59,7 @@ const Navbar = () => {
               id="home"
               src={assets.my_logo}
               alt="Logo"
-              className="h-8 w-auto cursor-pointer"
+              className="h-8 w-auto cursor-pointer "
               whileHover={{
                 x: [0, -3, 3, -3, 3, 0], // Shake animation
                 transition: { duration: 0.2, repeat: Infinity },
@@ -128,7 +128,12 @@ const Navbar = () => {
               alt=""
             />
 
-            <a className="text-sm  max-sm:hidden bg-white-white rounded-full px-6 py-2 flex gap-2 text-second cursor-pointer transition-all hover:scale-103">
+            <a
+              href="/anandtp_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm  max-sm:hidden bg-white-white rounded-full px-6 py-2 flex gap-2 text-second cursor-pointer transition-all hover:scale-103 hover:bg-primary/80"
+            >
               Resume{" "}
               <img
                 width={14}

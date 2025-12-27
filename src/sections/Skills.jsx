@@ -1,10 +1,16 @@
 import React from "react";
 import { skills } from "../assets/skills";
 import { motion } from "framer-motion";
+import TargetCursor from "../components/TargetCursor";
 
 const Skills = () => {
   return (
     <section id="skills" className="max-w-5xl mx-auto px-4 py-20 scroll-mt-20">
+      <TargetCursor
+        spinDuration={2}
+        hideDefaultCursor={true}
+        parallaxOn={true}
+      />
       <div className="flex flex-col items-center gap-2 mb-12">
         <motion.h3
           initial={{ opacity: 0, y: -20 }}
@@ -32,7 +38,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1, duration: 0.5 }}
-            className="flex flex-col gap-6"
+            className="flex flex-col gap-6 "
           >
             <h3 className="text-white-white/80 text-xl font-semibold pl-4 border-l-4 border-primary/50">
               {group.category}
@@ -46,7 +52,7 @@ const Skills = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: skillIndex * 0.1 }}
                   viewport={{ once: true }}
-                  className="group flex flex-col items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10"
+                  className="group flex flex-col items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 cursor-target"
                 >
                   <div className="h-12 w-12 flex items-center justify-center p-2 rounded-full bg-black/20 group-hover:bg-black/30 transition-colors">
                     <img

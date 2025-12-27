@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import BlurText from "../components/BlurText";
 import TextType from "../components/TextType";
+import TargetCursor from "../components/TargetCursor";
 
 const Hero = () => {
   const [showTextType, setShowTextType] = useState(false);
@@ -15,6 +16,12 @@ const Hero = () => {
       id="hero"
       className="flex flex-col items-center gap-6 py-48 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden"
     >
+      <TargetCursor
+        spinDuration={2}
+        hideDefaultCursor={true}
+        parallaxOn={true}
+      />
+
       <span className="gradient-text">
         <BlurText
           text="Most of my learning starts"
@@ -22,12 +29,14 @@ const Hero = () => {
           animateBy="words"
           direction="top"
           spanClassName="leading-[1.25] gradient-text text-4xl sm:text-5xl md:text-6xl xl:text-[70px] font-black"
+          className="cursor-target"
         />
         <BlurText
           text="after something doesn’t work."
           delay={160}
           animateBy="words"
           direction="top"
+          className="cursor-target"
           onAnimationComplete={handleAnimationComplete}
           spanClassName=" leading-[1.25] gradient-text text-4xl sm:text-5xl md:text-6xl xl:text-[70px] font-black"
         />
