@@ -48,7 +48,10 @@ const Navbar = () => {
       {/* Centering wrapper */}
       <div className="mx-auto max-w-5xl  px-4">
         {/* Pill navbar */}
-        <nav
+        <motion.nav
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="flex items-center justify-between rounded-full 
                          backdrop-blur-md bg-second/30
                         px-6 py-3 border border-white/10"
@@ -75,49 +78,78 @@ const Navbar = () => {
               !sidebarOpen
                 ? "max-sm:w-0 overflow-hidden"
                 : "max-sm:w-60 max-sm:pl-10"
-            } max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-second/30 max-sm:backdrop-blur-md max-sm:border-white/10 max-sm:text-white-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}
+            } max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-second/50a max-sm:backdrop-blur-xs max-sm:border-white/10 max-sm:text-white-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}
           >
-            <img
+            <motion.img
+              whileHover={{ rotate: 90, scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
               onClick={() => setSidebarOpen(false)}
               src={assets.close_icon}
               alt="Close"
-              className="w-8 absolute right-4 top-4 sm:hidden rounded-full bg-white-white p-1"
+              className="w-8 absolute right-4 top-4 sm:hidden rounded-full bg-white-white p-1 cursor-pointer"
             />
-            <a
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => setSidebarOpen(false)}
               href="#"
               className="hover:text-primary transition hover:border-b"
             >
               Home
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => setSidebarOpen(false)}
               href="#about-me"
               className="hover:text-primary transition hover:border-b"
             >
               About Me
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => setSidebarOpen(false)}
               href="#skills"
               className="hover:text-primary transition hover:border-b"
             >
               Skills
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => setSidebarOpen(false)}
               href="#projects"
               className="hover:text-primary transition hover:border-b"
             >
               Projects
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => setSidebarOpen(false)}
               href="#contact"
               className="hover:text-primary transition hover:border-b"
             >
               Contact
-            </a>
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setSidebarOpen(false)}
+              href="/anandtp_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sm:hidden text-second  hover:bg-primary/80 font-bold text-center  bg-white-white rounded-full px-6 w-36 py-2 cursor-pointer transition hover:border-b flex gap-2"
+            >
+              Resume
+              <img
+                width={14}
+                src={assets.download_icon}
+                alt="download"
+                className="text-second h-6 w-6 "
+              />
+            </motion.a>
           </div>
           <div className="flex items-center gap-2 sm:gap-4">
             <img
@@ -128,11 +160,13 @@ const Navbar = () => {
               alt=""
             />
 
-            <a
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               href="/anandtp_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm  max-sm:hidden bg-white-white rounded-full px-6 py-2 flex gap-2 text-second cursor-pointer transition-all hover:scale-103 hover:bg-primary/80"
+              className="text-sm  max-sm:hidden bg-white-white rounded-full px-6 py-2 flex gap-2 text-second cursor-pointer transition-all hover:bg-primary/80"
             >
               Resume{" "}
               <img
@@ -141,9 +175,9 @@ const Navbar = () => {
                 alt="download"
                 className="text-second h-6 w-6 "
               />
-            </a>
+            </motion.a>
           </div>
-        </nav>
+        </motion.nav>
       </div>
     </header>
   );
