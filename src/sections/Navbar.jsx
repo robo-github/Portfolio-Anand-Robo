@@ -62,7 +62,7 @@ const Navbar = () => {
               id="home"
               src={assets.my_logo}
               alt="Logo"
-              className="h-9 w-auto cursor-pointer "
+              className="h-8 w-auto cursor-pointer "
               whileHover={{
                 x: [0, -3, 3, -3, 3, 0], // Shake animation
                 transition: { duration: 0.2, repeat: Infinity },
