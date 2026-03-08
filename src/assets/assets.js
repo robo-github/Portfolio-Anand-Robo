@@ -31,6 +31,7 @@ import vs_code_icon from "./vscode.svg";
 import agency_ai from "./project_images/agency_ai.png";
 import ai from "./project_images/ai.png";
 import gemini_clone from "./project_images/gemini_clone.png";
+import neuroscan_ai from "./project_images/neuroscan_ai.png";
 import nike from "./project_images/nike.png";
 import todo_mern from "./project_images/todo_mern.png";
 import tab from "./tab.svg";
@@ -85,6 +86,7 @@ const assets = {
 export default assets;
 
 export const proj_img = {
+  neuroscan_ai,
   agency_ai,
   ai,
   gemini_clone,

@@ -1,8 +1,28 @@
 import { proj_img } from "../assets";
 
-const { agency_ai, ai, gemini_clone, nike, todo_mern } = proj_img;
+const { agency_ai, ai, gemini_clone, nike, todo_mern , neuroscan_ai } = proj_img;
 
 export const projects = [
+  {
+    id: "neuroscan-ai-navy",
+    title: "A Web-Based Brain MRI Tumor Classification System Using Deep Learning",
+    description:
+      "A full-stack MERN application that uses deep learning (YOLOv8) to analyze MRI scans for brain tumor detection and provides downloadable medical reports. successfully",
+    image: neuroscan_ai,
+    tech: [
+  "React", 
+  "Tailwind CSS", 
+  "Node.js", 
+  "Express.js", 
+  "MongoDB", 
+  "FastAPI", 
+  "YOLOv8 AI", 
+  "Docker"
+]
+,
+    liveUrl: "https://neuroscan-ai-navy.vercel.app/",
+    repoUrl: "https://github.com/robo-github/brain-tumor-project",
+  },
   {
     id: "agency_ai",
     title: "Agency Ai",
