@@ -9,6 +9,7 @@ import Projects from "./sections/Projects";
 import ConnectMe from "./sections/ConnectMe";
 import { Toaster } from "react-hot-toast";
 import Footer from "./sections/Footer";
+import MobileNotice from "./components/MobileNotice";
 
 const App = () => {
   useEffect(() => {
@@ -37,6 +38,7 @@ const App = () => {
 
   return (
     <>
+      <MobileNotice />
 
       <div
         style={{
