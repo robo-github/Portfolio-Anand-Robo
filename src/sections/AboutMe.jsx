@@ -48,44 +48,78 @@ const AboutMe = () => {
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-20">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.15,
+                  delayChildren: 0.3,
+                },
+              },
+            }}
             className="flex flex-col gap-4 text-left max-w-3xl text-white-white font-medium text-[18px] sm:text-[20px] leading-relaxed"
           >
-            <p className="cursor-target gradient-text-white">
+            <motion.p
+              variants={{
+                hidden: { opacity: 0, x: -30 },
+                visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+              }}
+              className="cursor-target gradient-text-white"
+            >
               I’m Anand TP, a BCA student and fellow at NxtWave Academy,
               currently building full-stack applications using the MERN stack.
-            </p>
-            <p className="cursor-target gradient-text-white">
+            </motion.p>
+            <motion.p
+              variants={{
+                hidden: { opacity: 0, x: -30 },
+                visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+              }}
+              className="cursor-target gradient-text-white"
+            >
               I began with Python, exploring data engineering concepts and
               Django, before moving into React and MERN to build complete,
               real-world web applications.
-            </p>
-            <p className="cursor-target gradient-text-white">
+            </motion.p>
+            <motion.p
+              variants={{
+                hidden: { opacity: 0, x: -30 },
+                visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+              }}
+              className="cursor-target gradient-text-white"
+            >
               Most of my time goes into building UI, fixing bugs, and
               understanding backend logic. I care deeply about clean design,
               solid logic, performance, maintainable code, and good user
               experience.
-            </p>
-            <p className="cursor-target gradient-text-white">
+            </motion.p>
+            <motion.p
+              variants={{
+                hidden: { opacity: 0, x: -30 },
+                visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+              }}
+              className="cursor-target gradient-text-white"
+            >
               My goal is to build full-stack projects without relying on
               tutorials, creating real-world web pages with clear structure,
               full functionality, and thoughtful design.
-            </p>
+            </motion.p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
+            whileHover={{ scale: 1.05 }}
             transition={{
               duration: 0.6,
               delay: 0.4,
               ease: "easeOut",
             }}
             onClick={handleSpeak}
-            className="cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out rounded-full p-2 hover:shadow-lg hover:shadow-primary"
+            className="cursor-pointer transition-shadow duration-300 rounded-full p-2 hover:shadow-lg hover:shadow-primary"
             title="Click to hear me!"
           >
             <img src={assets.man} className="w-40 sm:w-100" alt="Anand TP" />

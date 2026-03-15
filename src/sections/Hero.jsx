@@ -29,14 +29,14 @@ const Hero = () => {
           animateBy="words"
           direction="top"
           spanClassName="leading-[1.25] gradient-text text-4xl sm:text-5xl md:text-6xl xl:text-[70px] font-black"
-          className="cursor-target"
+          className="cursor-target justify-center"
         />
         <BlurText
           text="after something doesn’t work."
           delay={160}
           animateBy="words"
           direction="top"
-          className="cursor-target"
+          className="cursor-target justify-center"
           onAnimationComplete={handleAnimationComplete}
           spanClassName=" leading-[1.25] gradient-text text-4xl sm:text-5xl md:text-6xl xl:text-[70px] font-black"
         />
