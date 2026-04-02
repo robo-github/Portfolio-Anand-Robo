@@ -74,11 +74,10 @@ const Navbar = () => {
 
           {/* Right */}
           <div
-            className={`text-white-white sm:text-sm max-sm:fixed max-sm:top-0 max-sm:right-0 max-sm:w-64 max-sm:min-h-screen max-sm:flex-col max-sm:pt-24 max-sm:pl-10 max-sm:pr-6 max-sm:gap-8 flex sm:items-center gap-5 z-50 max-sm:transition max-sm:duration-500 ${
-              !sidebarOpen
+            className={`text-white-white sm:text-sm max-sm:fixed max-sm:top-0 max-sm:right-0 max-sm:w-64 max-sm:min-h-screen max-sm:flex-col max-sm:pt-24 max-sm:pl-10 max-sm:pr-6 max-sm:gap-8 flex sm:items-center gap-5 z-50 max-sm:transition max-sm:duration-500 ${!sidebarOpen
                 ? "max-sm:translate-x-full max-sm:opacity-0 max-sm:pointer-events-none"
                 : "max-sm:translate-x-0 max-sm:opacity-100 max-sm:pointer-events-auto max-sm:bg-second/80 max-sm:backdrop-blur-md max-sm:border-l max-sm:border-white/10 max-sm:shadow-[-10px_0_30px_rgba(0,0,0,0.5)]"
-            }`}
+              }`}
           >
             <motion.img
               whileHover={{ rotate: 90, scale: 1.1 }}
@@ -88,7 +87,7 @@ const Navbar = () => {
               alt="Close"
               className="w-8 absolute right-4 top-4 sm:hidden rounded-full bg-white-white p-1 cursor-pointer"
             />
-            
+
             {[
               { name: "Home", link: "#" },
               { name: "About Me", link: "#about-me" },
