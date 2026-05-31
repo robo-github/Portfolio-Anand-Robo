@@ -6,7 +6,7 @@ import DotGrid from "./components/DotGrid";
 import Skills from "./sections/Skills";
 import AboutMe from "./sections/AboutMe";
 import Projects from "./sections/Projects";
-import ConnectMe from "./sections/ConnectMe";
+import Contact from "./sections/Contact";
 import { Toaster } from "react-hot-toast";
 import Footer from "./sections/Footer";
 import MobileNotice from "./components/MobileNotice";
@@ -94,7 +94,7 @@ const App = () => {
         <AboutMe />
         <Skills />
         <Projects />
-        <ConnectMe />
+        <Contact />
         <Footer />
         {/* <Skills /> */}
         {/* other page sections go here */}
