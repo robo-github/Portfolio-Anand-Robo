@@ -1,8 +1,18 @@
 import { proj_img } from "../assets";
 
-const { agency_ai, ai, gemini_clone, nike, todo_mern , neuroscan_ai } = proj_img;
+const { agency_ai, ai, gemini_clone, nike, todo_mern , neuroscan_ai, fix_local } = proj_img;
 
 export const projects = [
+  {
+    id: "fixlocal",
+    title: "FixLocal - Local Service Marketplace Platform",
+    description:
+      "A modern full-stack MERN marketplace application that connects customers with verified local service professionals. Features secure authentication, real-time booking management, live notifications, worker verification, Google OAuth, Cloudinary media uploads, and role-based dashboards.",
+    image: fix_local,
+    tech: ["React 19", "Tailwind CSS v4", "Node.js", "Express.js", "MongoDB", "Socket.IO", "JWT", "Google OAuth", "Cloudinary", "Multer"],
+    liveUrl: "https://fixlocal-henna.vercel.app",
+    repoUrl: "https://github.com/robo-github/fixlocal",
+  },
   {
     id: "neuroscan-ai-navy",
     title: "A Web-Based Brain MRI Tumor Classification System Using Deep Learning",

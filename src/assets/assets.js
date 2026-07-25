@@ -27,6 +27,14 @@ import netlify_icon from "./netlify-icon.svg";
 import docker_icon from "./docker-original.svg";
 import c_icon from "./c-icon.svg";
 import vs_code_icon from "./vscode.svg";
+import claude_icon from "./claude-ai-icon.svg";
+import codex_icon from "./codex-icon.svg";
+import chatgpt_icon from "./chatgpt-icon.svg";
+import github_copilot_icon from "./github-copilot-icon.svg";
+import antigravity_icon from "./antigravity-color.svg";
+import cursor_ai_icon from "./cursor-ai-code-icon.svg";
+import lovable_icon from "./lovable-ai-icon.svg";
+import windsurf_icon from "./windsurf-icon.svg";
 
 import agency_ai from "./project_images/agency_ai.png";
 import ai from "./project_images/ai.png";
@@ -34,6 +42,7 @@ import gemini_clone from "./project_images/gemini_clone.png";
 import neuroscan_ai from "./project_images/neuroscan_ai.png";
 import nike from "./project_images/nike.png";
 import todo_mern from "./project_images/todo_mern.png";
+import fix_local from "./project_images/fix_local.png";
 import tab from "./tab.svg";
 import hello from "./hello.svg";
 import instagram from "./instagram.svg";
@@ -81,6 +90,14 @@ const assets = {
   netlify_icon,
   docker_icon,
   vs_code_icon,
+  claude_icon,
+  codex_icon,
+  chatgpt_icon,
+  github_copilot_icon,
+  antigravity_icon,
+  cursor_ai_icon,
+  lovable_icon,
+  windsurf_icon,
 };
 
 export default assets;
@@ -92,4 +109,5 @@ export const proj_img = {
   gemini_clone,
   nike,
   todo_mern,
+  fix_local,
 };

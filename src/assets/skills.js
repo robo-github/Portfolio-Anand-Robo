@@ -46,4 +46,17 @@ export const skills = [
       { name: "VsCode", icon: assets.vs_code_icon },
     ],
   },
+  {
+    category: "AI Skills",
+    items: [
+      { name: "Claude Code", icon: assets.claude_icon },
+      { name: "Codex", icon: assets.codex_icon },
+      { name: "ChatGPT", icon: assets.chatgpt_icon },
+      { name: "GitHub Copilot", icon: assets.github_copilot_icon },
+      { name: "Antigravity", icon: assets.antigravity_icon },
+      { name: "Cursor AI", icon: assets.cursor_ai_icon },
+      { name: "Lovable", icon: assets.lovable_icon },
+      { name: "Windsurf", icon: assets.windsurf_icon },
+    ],
+  },
 ];

@@ -22,7 +22,7 @@ const Hero = () => {
         parallaxOn={true}
       />
 
-      <span className="gradient-text">
+      <div className="flex flex-col items-center">
         <BlurText
           text="Most of my learning starts"
           delay={150}
@@ -40,7 +40,7 @@ const Hero = () => {
           onAnimationComplete={handleAnimationComplete}
           spanClassName=" leading-[1.25] gradient-text text-4xl sm:text-5xl md:text-6xl xl:text-[70px] font-black"
         />
-      </span>
+      </div>
 
       {showTextType && (
         <TextType

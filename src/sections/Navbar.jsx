@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import assets from "../assets/assets";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
