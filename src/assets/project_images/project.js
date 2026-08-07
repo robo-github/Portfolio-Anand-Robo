@@ -1,8 +1,18 @@
 import { proj_img } from "../assets";
 
-const { agency_ai, ai, gemini_clone, nike, todo_mern , neuroscan_ai, fix_local } = proj_img;
+const { agency_ai, ai, gemini_clone, nike, todo_mern , neuroscan_ai, fix_local, FinanceOS } = proj_img;
 
 export const projects = [
+  {
+    id: "financeos",
+    title: "FinanceOS",
+    description:
+      "A modern, open-source trading journal and analytics dashboard designed for traders to track their executions, analyze performance metrics, and improve their strategies. Built with React and Node.js, it seamlessly integrates with Notion as a database for your trades and features an AI Tutor to help you review your trading performance.",
+    image: FinanceOS,
+    tech: ["React 18", "Node.js", "Express.js", "MongoDB", "Notion API", "Tailwind CSS"],
+    liveUrl: "https://finance-trade-journal.vercel.app/",
+    repoUrl: "https://github.com/robo-github/FinanceSO",
+  },
   {
     id: "fixlocal",
     title: "FixLocal - Local Service Marketplace Platform",

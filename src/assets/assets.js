@@ -43,6 +43,7 @@ import neuroscan_ai from "./project_images/neuroscan_ai.png";
 import nike from "./project_images/nike.png";
 import todo_mern from "./project_images/todo_mern.png";
 import fix_local from "./project_images/fix_local.png";
+import FinanceOS from "./project_images/FinanceOS.png";
 import tab from "./tab.svg";
 import hello from "./hello.svg";
 import instagram from "./instagram.svg";
@@ -110,4 +111,5 @@ export const proj_img = {
   nike,
   todo_mern,
   fix_local,
+  FinanceOS,
 };
